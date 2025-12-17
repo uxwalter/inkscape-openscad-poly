@@ -43,5 +43,6 @@ class MyEffect(inkex.Effect):
             entity.make_poly(self.context)
 
 if __name__ == '__main__':   #pragma: no cover
+    inkex.debug("In OpenSCAD")
     e = MyEffect()
     e.affect()

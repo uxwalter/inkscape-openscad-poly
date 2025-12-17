@@ -3,8 +3,7 @@
   <_name>OpenSCAD Polygon Output</_name>
   <id>com.makerbot.openscad.polygon</id>
   <dependency type="extension">org.inkscape.output.svg.inkscape</dependency>
-  <dependency type="executable" location="extensions">openscad-poly.py</dependency>
-  <dependency type="executable" location="extensions">inkex.py</dependency>
+
   <param name="tab" type="notebook">
     <page name="help" _gui-text="Help">
       <_param name="ext_help" type="description" xml:space="preserve">OpenSCAD Polygon Output.
@@ -24,6 +23,7 @@ Polygon Info: http://bit.ly/openscad-polygons
     <_filetypetooltip>Convert paths into OpenSCAD polygon modules.</_filetypetooltip>
     <dataloss>true</dataloss>
   </output>
+  
   <script>
     <command reldir="extensions" interpreter="python">openscad-poly.py</command>
   </script>
